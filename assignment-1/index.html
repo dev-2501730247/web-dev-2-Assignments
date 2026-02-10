@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Event Dashboard</title>
+<link href="/assignment-1/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- heading -->
+<div>
+    <h1 style="text-align:center;">🎯 Smart Event Dashboard</h1>
+</div>
+
+<!-- main dashboard -->
+<div>
+
+    <!-- add new event card -->
+    <div>
+        <div>
+            <h2>Add New Event</h2>
+        </div>
+
+        <!-- event title -->
+        <div>
+            <label>Event Title:</label><br>
+            <input type="text" id="event-title">
+        </div><br>
+
+        <!-- event date -->
+        <div>
+            <label>Event Date:</label><br>
+            <input type="date" id="event-date">
+        </div><br>
+
+        <!-- event category -->
+        <div>
+            <label>Category:</label><br>
+            <select id="event-category">
+                <option>Conference</option>
+                <option>Workshop</option>
+                <option>Webinar</option>
+                <option>Meetup</option>
+                <option>Social</option>
+                <option>Other</option>
+            </select>
+        </div><br>
+
+        <!-- event description -->
+        <div>
+            <label>Description:</label><br>
+            <textarea id="event-desc"></textarea>
+        </div><br>
+
+        <!-- add event btn -->
+        <div>
+            <button onclick="addEvent()">Add Event</button>
+        </div>
+    </div>
+
+
+    <!-- my events section -->
+    <div>
+        <div>
+            <h2>My Events</h2>
+        </div>
+
+        <div>
+            <button onclick="clearEvents()">Clear All Events</button>
+            <button onclick="addSampleEvents()">Add Sample Events</button>
+        </div>
+
+        <div id="events-list">
+            <p>No events yet. Add your First Event!</p>
+        </div>
+    </div>
+
+
+    <!-- DOM demo card -->
+    <div>
+        <div>
+            <h2>DOM Manipulation Demo</h2>
+        </div>
+
+        <div>
+            <h3>innerText vs innerHTML vs textContent</h3>
+        </div>
+
+        <div>
+            <p>Original HTML: &lt;strong&gt;Bold Text&lt;/strong&gt; with spaces</p>
+        </div>
+
+        <div>
+            <p>innerHTML: <strong>Bold Text</strong> with spaces</p>
+        </div>
+
+        <div>
+            <p>innerText: Bold Text with spaces</p>
+        </div>
+
+        <div>
+            <p>textContent: Bold Text with spaces</p>
+        </div>
+
+        <div>
+            <p id="key-display">You pressed: <span id="key-name">Shift</span></p>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
